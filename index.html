@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <i class="bi bi-file-person me-2"></i>
+          <span class="fs-4">Moti Wolff's Resume</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-link">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <div id="hero" class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="me.jpg"
+            class="d-block mx-lg-auto img-fluid hero-image"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Building Smart Solutions with Clean Code.
+          </h1>
+          <p class="lead">
+            Passionate software developer with a strong foundation in Python,
+            web technologies, and problem-solving. Experienced in building
+            full-stack applications, automating tasks, and delivering clean,
+            efficient code that turns ideas into impactful digital solutions.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Primary
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Default
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resume" class="container px-4 py-5">
+      <h2 class="pb-2 border-bottom">Resume</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+        <div class="col d-flex flex-column align-items-start gap-2">
+          <h2 class="fw-bold text-body-emphasis">
+            Curious. Disciplined. Creative. Leader. Learner. Resilient.
+          </h2>
+          <p class="text-body-secondary">
+            Driven and adaptable, I thrive under pressure, learn fast, and lead with empathy. My background blends creativity, discipline, and teamwork — making me a reliable problem-solver with long-term vision and grit.
+          </p>
+          <a href="https://drive.google.com/file/d/1WTmj0xrEWLVGrgfNTO4x-XkRHjCxUAUq/view?usp=sharing" class="btn btn-primary" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+              ></path>
+              <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
+              ></path>
+            </svg>
+            Download
+          </a>
+        </div>
+
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-3 mb-3"
+                style="width: 48px; height: 48px;"
+              >
+                <i class="bi bi-book-half fs-4"></i>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">
+                Education
+              </h4>
+              <p class="text-body-secondary">
+                Completed intensive academic training with honors, demonstrating discipline and curiosity.
+              </p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-3 mb-3"
+                style="width: 48px; height: 48px;"
+              >
+                <i class="bi bi-clock-history fs-4"></i>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Experience</h4>
+              <p class="text-body-secondary">
+                Hands-on roles shaped adaptability, leadership, and effective real-world decision-making.
+              </p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-3 mb-3"
+                style="width: 48px; height: 48px;"
+              >
+                <i class="bi bi-code-slash fs-4"></i>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Projects</h4>
+              <p class="text-body-secondary">
+                Led innovative, goal-driven projects showcasing initiative and technical creativity.
+              </p>
+            </div>
+
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-3 mb-3"
+                style="width: 48px; height: 48px;"
+              >
+                <i class="bi bi-person-workspace fs-4"></i>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Skills</h4>
+              <p class="text-body-secondary">
+                Strong in communication, coding, analysis, teamwork, problem-solving, and time management.
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
