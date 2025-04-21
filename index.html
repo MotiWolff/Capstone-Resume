@@ -6,9 +6,9 @@
     <title>HomePage</title>
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
     <!-- Bootstrap Icons -->
@@ -18,43 +18,53 @@
     />
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
   </head>
   <body>
     <div class="container">
-      <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
-          <i class="bi bi-file-person me-2"></i>
-          <span class="fs-4">Boots On The Hound - By Moti Wolff</span>
-        </a>
+      <header class="py-3 mb-4 border-bottom position-relative" style="z-index: 1030;" data-aos="fade-down">
+        <div class="d-flex align-items-center justify-content-between">
+          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+            <i class="bi bi-file-person me-2"></i>
+            <span class="fs-4">Boots On The Hound - By Moti Wolff</span>
+          </a>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="#hero" class="nav-link">Introduction</a>
-          </li>
-          <li class="nav-item">
-            <a href="#resume" class="nav-link">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
+          <!-- Regular navigation for desktop and iPad -->
+          <ul class="nav nav-pills d-none d-md-flex my-2 my-md-0">
+            <li class="nav-item"><a href="#hero" class="nav-link">Introduction</a></li>
+            <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <!-- Dropdown for mobile only -->
+          <div class="dropdown d-md-none">
+            <button class="btn btn-outline-dark px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-list"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow" style="z-index: 1031;">
+              <li><a class="dropdown-item py-2" href="#hero">Introduction</a></li>
+              <li><a class="dropdown-item py-2" href="#resume">Resume</a></li>
+              <li><a class="dropdown-item py-2" href="#projects">Projects</a></li>
+              <li><a class="dropdown-item py-2" href="#about">About</a></li>
+              <li><a class="dropdown-item py-2" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </header>
     </div>
 
-    <div id="hero" class="container col-xxl-8 px-4 py-5">
+    <div id="hero" class="container px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-6" data-aos="fade-left" data-aos-delay="200">
           <img
-            src="me.jpg"
+            src="images/webs/me.webp"
             class="d-block mx-lg-auto img-fluid hero-image"
             alt="Bootstrap Themes"
             width="700"
@@ -62,7 +72,7 @@
             loading="lazy"
           />
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="400">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
             Building Smart Solutions with Clean Code.
           </h1>
@@ -73,22 +83,23 @@
             efficient code that turns ideas into impactful digital solutions.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-              Primary
-            </button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-              Default
-            </button>
+            <a href="https://github.com/MotiWolff" class="btn btn-dark btn-lg px-4 me-md-2" target="_blank">
+              <i class="bi bi-github"></i>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mordechay-wolff-13b440180/" class="btn btn-primary btn-lg px-4" target="_blank">
+              <i class="bi bi-linkedin"></i>
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <div id="resume" class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Resume</h2>
-
+      <h2 class="pb-2 border-bottom" data-aos="fade-right">Resume</h2>
       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-        <div class="col d-flex flex-column align-items-start gap-2">
+        <div class="col d-flex flex-column align-items-start gap-2" data-aos="fade-right" data-aos-delay="200">
           <h2 class="fw-bold text-body-emphasis">
             Curious. Disciplined. Creative. Leader. Learner. Resilient.
           </h2>
@@ -115,9 +126,9 @@
           </a>
         </div>
 
-        <div class="col">
+        <div class="col" data-aos="fade-left" data-aos-delay="400">
           <div class="row row-cols-1 row-cols-sm-2 g-4">
-            <div class="col d-flex flex-column gap-2">
+            <div class="col d-flex flex-column gap-2" data-aos="zoom-in" data-aos-delay="600">
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-3 mb-3"
                 style="width: 48px; height: 48px;"
@@ -132,7 +143,7 @@
               </p>
             </div>
 
-            <div class="col d-flex flex-column gap-2">
+            <div class="col d-flex flex-column gap-2" data-aos="zoom-in" data-aos-delay="700">
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-3 mb-3"
                 style="width: 48px; height: 48px;"
@@ -145,7 +156,7 @@
               </p>
             </div>
 
-            <div class="col d-flex flex-column gap-2">
+            <div class="col d-flex flex-column gap-2" data-aos="zoom-in" data-aos-delay="800">
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-3 mb-3"
                 style="width: 48px; height: 48px;"
@@ -158,7 +169,7 @@
               </p>
             </div>
 
-            <div class="col d-flex flex-column gap-2">
+            <div class="col d-flex flex-column gap-2" data-aos="zoom-in" data-aos-delay="900">
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 p-3 mb-3"
                 style="width: 48px; height: 48px;"
@@ -170,168 +181,159 @@
                 Strong in communication, coding, analysis, teamwork, problem-solving, and time management.
               </p>
             </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <section id="projects" class="py-5 text-center container">
-      <div class="text-start">
-        <h2 class="pb-2 border-bottom">Projects</h2>
-      </div>
+    <section id="projects" class="container px-4 py-5">
+      <h2 class="pb-2 border-bottom" data-aos="fade-right">Notable Projects</h2>
       <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <p class="lead text-body-secondary">I’ve worked on diverse Python projects, focusing on game development, data manipulation, and algorithm design. I also have experience with Flask and full-stack web development, along with hardware design concepts.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
+        <div class="col-lg-6 col-md-8 mx-auto text-center" data-aos="fade-up">
+          <p class="lead text-body-secondary">I've worked on diverse Python and JavaScript projects, focusing on game development, data manipulation, and algorithm design. I also have experience with Flask and full-stack web development, along with hardware design concepts.</p>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow-sm h-100">
+            <img src="images/webs/havlin-poster.webp" class="card-img-top" alt="Project 1 Screenshot" style="height: 225px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Developed a heritage-focused web application showcasing the Havlin family's Jewish legacy and Chabad activities using HTML, JavaScript and Netlify implementation for a modern, responsive design. The site features a dark theme with gold accents, implementing both Hebrew and English language support.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <div class="btn-group">
+                  <a href="https://havlin-family.netlify.app/home.html" class="btn btn-sm btn-primary" target="_blank">
+                    <i class="bi bi-play-fill"></i> Demo
+                  </a>
+                  <a href="https://github.com/MotiWolff/Havlin-Web" class="btn btn-sm btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> Repo
+                  </a>
+                </div>
+                <small class="text-body-secondary">Python</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow-sm h-100">
+            <img src="images/webs/pregnancy.webp" class="card-img-top" alt="Project 2 Screenshot" style="height: 225px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Created a pregnancy journey tracker using Flask, SQL for backend and HTML, CSS, and JavaScript for the frontend. The app allows users to track their pregnancy journey, including weight gain, doctor visits, and more.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <div class="btn-group">
+                  <a href="https://dashboard.render.com/web/srv-cur38kfnoe9s73ae8n60/metrics" class="btn btn-sm btn-primary" target="_blank">
+                    <i class="bi bi-play-fill"></i> Demo
+                  </a>
+                  <a href="https://github.com/MotiWolff/Pregnancy-Tracker" class="btn btn-sm btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> Repo
+                  </a>
+                </div>
+                <small class="text-body-secondary">Python</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="300">
+          <div class="card shadow-sm h-100">
+            <img src="images/webs/this-website.webp" class="card-img-top" alt="Project 3 Screenshot" style="height: 225px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">Built a modern, responsive portfolio website using vanilla HTML, CSS, and JavaScript. Implemented dark/light mode, smooth animations, and accessibility features. Focused on clean code and optimal performance.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <div class="btn-group">
+                  <a href="https://motiwolff.com" class="btn btn-sm btn-primary" target="_blank">
+                    <i class="bi bi-play-fill"></i> Demo
+                  </a>
+                  <a href="https://github.com/MotiWolff/motiwolff.github.io" class="btn btn-sm btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> Repo
+                  </a>
+                </div>
+                <small class="text-body-secondary">Python</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-delay="400">
+          <div class="card shadow-sm h-100">
+            <img src="images/webs/bookshelf.webp" class="card-img-top" alt="Project 4 Screenshot" style="height: 225px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">A user-friendly platform built with Flask and Bootstrap for creating, managing, and sharing reading lists. Easily track books, collaborate with others, and discover new reads in a sleek interface.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <div class="btn-group">
+                  <a href="https://my-bookshef.onrender.com/" class="btn btn-sm btn-primary" target="_blank">
+                    <i class="bi bi-play-fill"></i> Demo
+                  </a>
+                  <a href="https://github.com/MotiWolff/My_Bookshelf" class="btn btn-sm btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> Repo
+                  </a>
+                </div>
+                <small class="text-body-secondary">Python</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="500">
+          <div class="card shadow-sm h-100">
+            <img src="images/webs/abba.webp" class="card-img-top" alt="Project 5 Screenshot" style="height: 225px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">A clean, fast-loading website offering structured, easy-to-follow video lessons by my father. Built with pure HTML, CSS, and JavaScript for simplicity, accessibility, and an intuitive learning experience.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <div class="btn-group">
+                  <a href="#" class="btn btn-sm btn-primary" target="_blank">
+                    <i class="bi bi-play-fill"></i> Demo
+                  </a>
+                  <a href="https://github.com/MotiWolff/Abba-Lessons" class="btn btn-sm btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> Repo
+                  </a>
+                </div>
+                <small class="text-body-secondary">Python</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="600">
+          <div class="card shadow-sm h-100">
+            <img src="images/webs/blog.webp" class="card-img-top" alt="Project 6 Screenshot" style="height: 225px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <p class="card-text flex-grow-1">A simple web app built with Flask and Bootstrap that lets users share, explore, and manage personal reading lists. Add books, view others’ favorites, and discover new reads easily.</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <div class="btn-group">
+                  <a href="https://blog-5h2d.onrender.com" class="btn btn-sm btn-primary" target="_blank">
+                    <i class="bi bi-play-fill"></i> Demo
+                  </a>
+                  <a href="https://github.com/MotiWolff/Blog" class="btn btn-sm btn-dark" target="_blank">
+                    <i class="bi bi-github"></i> Repo
+                  </a>
+                </div>
+                <small class="text-body-secondary">Python</small>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="album py-5 bg-body-tertiary">
-      <div class="container">
-  
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-body-secondary">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="about" class="container px-4 py-5">
+      <h2 class="pb-2 border-bottom" data-aos="fade-right">About Me</h2>
+      <!-- Add your about section content here -->
     </div>
+
+    <div id="contact" class="container px-4 py-5">
+      <h2 class="pb-2 border-bottom" data-aos="fade-right">Contact</h2>
+      <!-- Add your contact section content here -->
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous"></script>
+    
+    <!-- AOS init -->
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 100
+      });
+    </script>
   </body>
 </html>
