@@ -432,9 +432,114 @@
     </div>
 
     <div id="contact" class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom" data-aos="fade-right">Contact</h2>
-      <!-- Add your contact section content here -->
+      <h2 class="pb-2 border-bottom" data-aos="fade-right">Get in Touch</h2>
+      <div class="row justify-content-center py-5">
+        <div class="col-lg-10">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            
+            <!-- WhatsApp Card -->
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100 shadow-sm border-0 rounded-4">
+                <div class="card-body p-4 text-center">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-4 rounded-3 mb-3" style="width: 48px; height: 48px;">
+                    <i class="bi bi-whatsapp"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-3 text-body-emphasis">Chat With Me</h4>
+                  <p class="text-body-secondary mb-3">
+                    Prefer instant messaging? Feel free to reach out on WhatsApp! I'm usually available for quick chats about projects, ideas, or opportunities.
+                  </p>
+                  <a href="https://wa.me/15162749055" class="btn btn-success px-4">
+                    Message me
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Card -->
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
+              <div class="card h-100 shadow-sm border-0 rounded-4">
+                <div class="card-body p-4 text-center">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 mb-3" style="width: 48px; height: 48px;">
+                    <i class="bi bi-share"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-3 text-body-emphasis">Connect With Me</h4>
+                  <p class="text-body-secondary mb-3">
+                    Let's connect on social media! Follow my journey and stay updated with my latest projects and thoughts.
+                  </p>
+                  <div class="d-flex justify-content-center gap-3">
+                    <a href="https://github.com/MotiWolff" class="btn btn-dark px-3" target="_blank">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mordechay-wolff-13b440180/" class="btn btn-primary px-3" target="_blank">
+                      <img src="images/icons/linkedin.svg" alt="LinkedIn" width="24" height="24">
+                    </a>
+                    <a href="https://drive.google.com/file/d/1WTmj0xrEWLVGrgfNTO4x-XkRHjCxUAUq/view?usp=sharing" class="btn btn-success px-3" target="_blank">
+                      <i class="bi bi-file-earmark-person"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="col" data-aos="fade-up" data-aos-delay="300">
+              <div class="card h-100 shadow-sm border-0 rounded-4">
+                <div class="card-body p-4 text-center">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 mb-3" style="width: 48px; height: 48px;">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-3 text-body-emphasis">Location</h4>
+                  <p class="text-body-secondary mb-3">
+                    Based in Kfar Chabad, Israel<br>
+                    Available for remote work and local opportunities
+                  </p>
+                  <span class="badge bg-primary-subtle text-primary-emphasis px-3 py-2">
+                    <i class="bi bi-clock me-2"></i>IST (GMT+3)
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Availability Card -->
+            <div class="col" data-aos="fade-up" data-aos-delay="400">
+              <div class="card h-100 shadow-sm border-0 rounded-4">
+                <div class="card-body p-4 text-center">
+                  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3 mb-3" style="width: 48px; height: 48px;">
+                    <i class="bi bi-calendar-check"></i>
+                  </div>
+                  <h4 class="fw-semibold mb-3 text-body-emphasis">Availability</h4>
+                  <p class="text-body-secondary mb-3">
+                    Currently serving in the military<br>
+                    Open to discussing future opportunities
+                  </p>
+                  <span class="badge bg-success-subtle text-success-emphasis px-3 py-2">
+                    <i class="bi bi-briefcase me-2"></i>Available for Projects
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <i class="bi bi-file-person fs-4"></i>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© <span id="year"></span> Moti Wolff. All rights reserved.</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a href="https://X.com/MotiWolff" class="text-body-secondary" aria-label="GitHub" target="_blank">
+            <i class="bi bi-twitter-x fs-4"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
     <!-- Sterni Modal -->
     <div class="modal fade" id="sterniModal" tabindex="-1" aria-labelledby="sterniModalLabel" aria-hidden="true">
@@ -476,6 +581,12 @@
         duration: 1000,
         offset: 100
       });
+    </script>
+    
+    <!-- Current Year -->
+    <script>
+      const currentYear = new Date().getFullYear();
+      document.getElementById("year").textContent = currentYear;
     </script>
   </body>
 </html>
