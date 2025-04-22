@@ -1,6 +1,11 @@
+.env
+__pycache__/
+*.pyc
 .DS_Store
-.vscode
-node_modules
+node_modules/
+dist/
+build/
+*.log
 
 # Environment variables
 .env
