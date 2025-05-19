@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my software development projects and professional experience. Built with clean, semantic HTML5, CSS3, and vanilla JavaScript.
 
-![Portfolio Preview](images/webs/resume.webp)
+![Portfolio Preview](images/webp/resume.webp)
 
 ## 🌟 Features
 
